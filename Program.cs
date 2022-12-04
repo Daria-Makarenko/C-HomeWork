@@ -63,3 +63,53 @@ while(current <= num)
     current += step;
 }
 */
+
+// Домашняя работа № 2
+
+// Задача 1 - Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+/*
+int FindSec(int num)
+{
+    int first = num / 10;
+    return first % 10;
+}
+int num = new Random().Next(100, 1000);
+Console.WriteLine("Randome number is " + num);
+Console.WriteLine("The result of work is " + FindSec(num));
+*/
+
+// Задача 2 - Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+/*
+int Showthird(int number)
+{
+   if(number < 100) return -1;
+    while (number >= 1000)
+        {
+            number = number / 10;
+        }
+        int num = number % 10;
+        return num;
+}
+
+Console.WriteLine("Write your number ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+int result = Showthird(number);
+Console.WriteLine(Showthird(number));
+*/
+
+// Задача 3 - Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным
+/*
+int Week(int number)
+{
+    if(number < 6)
+    Console.WriteLine("нет");
+    else 
+    Console.WriteLine("да");
+    return number;
+}
+
+Console.WriteLine("Введите номерт дня недели ");
+int number = Convert.ToInt32(Console.ReadLine());
+int result = Week(number);
+*/
