@@ -134,7 +134,77 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 
 // Задача 1 - Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+/*
+void IsPalindrome(int number)
+{
+    int revNum = 0;
+    int temp = number;
+    while(temp > 0)
+    { 
+        revNum = revNum*10 + temp%10;
+        temp/=10;
+    }
+    if (number == revNum) Console.WriteLine("Palindrome");
+    else Console.WriteLine("Not Palindrome");
+    
+}
+
+Console.WriteLine("Input your number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+IsPalindrome(num);
+*/
+
 // Задача 2 - Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+/*
+double Distance(double xA, double xB, double yA, double yB, double zA, double zB)
+{
+    double length = Math.Sqrt(Math.Pow(xB - xA, 2) + Math.Pow(yB - yA, 2) + Math.Pow(zB - zA,2));
+    return Math.Round(length, 2);
+}
+
+Console.Write("Input a x-coordinates of point A: ");
+double xA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input an y-coordinates of point A: ");
+double yA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input a z-coordinates of point A: ");
+double zA = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input a x-coordinates of point B: ");
+double xB = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input an y-coordinates of point B: ");
+double yB = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Input a z-coordinates of point B: ");
+double zB = Convert.ToDouble(Console.ReadLine());
+
+double distanceBetweenAB = Distance(xA, yA, zA, xB, yB, zB);
+
+Console.WriteLine($"Distance between point A and B is {distanceBetweenAB}");
+*/
 
 // Задача 3 - Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
+/*
+void Cube(int number)
+{
+    int counter = 1;
+    while(counter <= number)
+    {
+        Console.Write($"{Math.Pow(counter, 3)}");
+        if(counter != number) Console.Write(", ");
+        else Console.Write(".");
+        counter++;
+    }
+}
+
+Console.Write("Input an integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("The series of cubes of numbers: ");
+Cube(num);
+*/
